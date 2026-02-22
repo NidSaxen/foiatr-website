@@ -532,7 +532,51 @@ textarea.form-control {
     transform: translateY(0);
   }
 
+  /* Improve text readability on mobile */
+  body {
+    font-size: 1.1rem;
+    /* Increase base text size for readability */
+  }
+
+  h1.gradient-text {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
   .hero h1 {
     font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.15rem;
+  }
+
+  /* Maximize screen space on mobile */
+  .main-content {
+    padding: 6rem 1rem 2rem;
+    /* Reduced horizontal padding from 2rem to 1rem */
+  }
+
+  .card {
+    padding: 1.5rem;
+    /* Reduced inner card padding from 2.5rem to 1.5rem to free up text space */
+  }
+
+  .grid-cards {
+    grid-template-columns: 1fr;
+    /* Force single column to avoid squishing */
+    gap: 1.5rem;
+  }
+
+  .instagram-section {
+    padding: 1.5rem 1rem;
+    margin: 2rem auto;
   }
 }
