@@ -27,27 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Inject Google Translate Widget dynamically into all navbars
-  const navLinksList = document.querySelector('.nav-links');
-  if (navLinksList && !document.getElementById('google_translate_element')) {
-    const translateLi = document.createElement('li');
-    translateLi.id = 'google_translate_element';
-    navLinksList.appendChild(translateLi);
-
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    document.body.appendChild(script);
-
-    window.googleTranslateElementInit = function () {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'en,tr,hi',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
-    };
-  }
-
   // Navbar scroll effect
   const navbar = document.querySelector('.navbar');
   if (navbar) {
