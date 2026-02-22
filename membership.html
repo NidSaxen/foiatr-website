@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership | Friends of India Association Turkey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .benefits-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .benefits-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .benefits-list i {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <a href="index.html" class="nav-brand">
+            <img src="logo.png" alt="Friends of India Association, Turkey Logo" class="brand-logo" />
+            <span>Friends of India</span> Association, Turkey
+        </a>
+        <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="announcements.html" class="nav-link">Announcements</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="help-desk.html" class="nav-link">Help Desk</a></li>
+            <li><a href="membership.html" class="nav-link">Membership</a></li>
+            <li><a href="links.html" class="nav-link">Links</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="gradient-text">Become a Member</h1>
+            <p>Join the official registry of the Friends of India Association Turkey.</p>
+        </div>
+
+        <div class="grid-cards" style="align-items: start;">
+            <!-- Benefits Card -->
+            <div class="card glass">
+                <h3 style="color: var(--text-main);"><i class="fa-solid fa-star" style="color: var(--primary);"></i>
+                    Membership Benefits</h3>
+                <ul class="benefits-list">
+                    <li><i class="fa-solid fa-check"></i> Exclusive invites to community cultural events</li>
+                    <li><i class="fa-solid fa-check"></i> Access to the verified diaspora directory</li>
+                    <li><i class="fa-solid fa-check"></i> Dedicated support via the Help Desk</li>
+                    <li><i class="fa-solid fa-check"></i> Discounts at partnered Indian restaurants</li>
+                    <li><i class="fa-solid fa-check"></i> Networking opportunities with professionals</li>
+                </ul>
+                <div
+                    style="padding: 1rem; background: rgba(255, 153, 51, 0.1); border-radius: 8px; border-left: 3px solid var(--primary);">
+                    <strong>Note:</strong> Membership is absolutely free! It helps us maintain an updated directory for
+                    embassy and community communications.
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="card glass">
+                <h3 style="margin-bottom: 1.5rem;">Registration Form</h3>
+                <form
+                    onsubmit="event.preventDefault(); alert('Registration successful! Welcome to the community.'); window.location.href='index.html';">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label>Phone Number (Turkey)</label>
+                            <input type="tel" class="form-control" required placeholder="+90">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>City of Residence</label>
+                        <select class="form-control" required>
+                            <option>Istanbul</option>
+                            <option>Ankara</option>
+                            <option>Izmir</option>
+                            <option>Antalya</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Occupation/Status</label>
+                        <input type="text" class="form-control" required placeholder="e.g. Student, IT Professional">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Register
+                        Now</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/foiatr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Friends of India Association Turkey. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

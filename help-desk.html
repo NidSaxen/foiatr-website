@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk | Friends of India Association Turkey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <a href="index.html" class="nav-brand">
+            <img src="logo.png" alt="Friends of India Association, Turkey Logo" class="brand-logo" />
+            <span>Friends of India</span> Association, Turkey
+        </a>
+        <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="announcements.html" class="nav-link">Announcements</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="help-desk.html" class="nav-link">Help Desk</a></li>
+            <li><a href="membership.html" class="nav-link">Membership</a></li>
+            <li><a href="links.html" class="nav-link">Links</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="gradient-text">Community Help Desk</h1>
+            <p>Need assistance with living in Turkey? Our volunteers are here to guide you.</p>
+        </div>
+
+        <!-- FAQ Section -->
+        <div style="margin-bottom: 4rem;">
+            <h2 style="margin-bottom: 2rem; text-align: center;">Frequently Asked Questions</h2>
+            <div class="grid-cards">
+                <div class="card glass">
+                    <h3><i class="fa-solid fa-passport"></i> Visa & Residency</h3>
+                    <p>Find information regarding short-term tourist visas, long-term Ikamet (residence permits), and
+                        required apostle services for Indian documents in Turkey.</p>
+                </div>
+                <div class="card glass">
+                    <h3><i class="fa-solid fa-house"></i> Accommodation</h3>
+                    <p>Learn about the best neighborhoods for expats, how to safely rent property, and utilities setup
+                        processes in Istanbul and Ankara.</p>
+                </div>
+                <div class="card glass">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                    <p>Guidance on international schools, Turkish universities, and transferring educational credits
+                        from Indian boards to the Turkish system.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="card glass" style="max-width: 600px; margin: 0 auto;">
+            <h3 style="margin-bottom: 1.5rem; text-align: center;">Ask a Question</h3>
+            <form action="https://formsubmit.co/nidhiesh13@gmail.com" method="POST">
+                <!-- Disable Captcha for a smoother experience (optional) -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Redirect back to the help desk page after submission -->
+                <input type="hidden" name="_next" value="https://nidhishsaxena.github.io/help-desk.html">
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" class="form-control" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" class="form-control" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select name="category" class="form-control" required>
+                        <option>General Inquiry</option>
+                        <option>Visa/Immigration</option>
+                        <option>Event Information</option>
+                        <option>Emergency Assistance</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" class="form-control" required
+                        placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+            </form>
+        </div>
+
+        <!-- Privacy Policy Section -->
+        <div class="card glass" style="margin-top: 4rem;" id="privacy-policy">
+            <h2 style="margin-bottom: 2rem; text-align: center; color: var(--primary);">Privacy Policy</h2>
+            <div style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.8;">
+                <p style="margin-bottom: 1rem;">At Friends of India in Turkey (or a similar name for a hypothetical or
+                    emerging association serving the Indian community in Turkey, focused on Istanbul), we are committed
+                    to protecting the privacy and confidentiality of our members, partners, visitors, and the Indian
+                    expat community. This Privacy Policy outlines how we collect, use, disclose, and safeguard your
+                    personal information in compliance with Turkey's Personal Data Protection Law No. 6698 (KVKK), which
+                    governs the protection of personal data and aligns with international standards for privacy rights.
+                </p>
+
+                <p style="margin-bottom: 1.5rem;">By using our services, participating in our events (such as cultural
+                    celebrations, community gatherings, or networking activities in Istanbul), or engaging with our
+                    organization, you consent to the practices described in this policy.</p>
+
+                <h3 style="margin-bottom: 0.5rem; color: var(--accent);">Information We Collect</h3>
+                <p style="margin-bottom: 0.5rem;">We collect personal data necessary for our non-profit activities
+                    promoting Indian culture, community support, and events in Turkey:</p>
+                <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Personal Information:</strong> Your name, contact details
+                        (such as email address, phone number, WhatsApp, and address in Turkey or India), nationality,
+                        passport/ID details (if relevant for events or membership), and any other information you
+                        voluntarily provide.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Membership Information:</strong> Data related to your
+                        membership or participation, including status, renewal dates (if applicable), and attendance at
+                        events or programs.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Event Registration Data:</strong> When registering for
+                        events (e.g., Diwali celebrations, Holi festivals, cultural workshops, or community meetups in
+                        Istanbul), we may collect additional details such as dietary preferences (e.g.,
+                        vegetarian/halal), special accommodations, emergency contacts, or family member information.
+                    </li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Special Categories of Personal Data (under KVKK Article
+                            6):</strong> We may process sensitive data like religious beliefs (e.g., for festival
+                        planning), health-related info (e.g., dietary/allergies), or membership in associations, only
+                        when necessary and with your explicit consent or under KVKK exemptions for non-profits (limited
+                        to members, affiliates, or regular contacts, not disclosed externally).</li>
+                </ul>
+                <p style="margin-bottom: 1.5rem;">We process data in accordance with KVKK principles: lawfully, fairly,
+                    accurately, for specific purposes, limited to necessity, securely, and transparently.</p>
+
+                <h3 style="margin-bottom: 0.5rem; color: var(--accent);">How We Use Your Information</h3>
+                <p style="margin-bottom: 0.5rem;">We use your personal data solely for our legitimate non-profit
+                    purposes:</p>
+                <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Communications:</strong> To send updates about events,
+                        programs, cultural activities, community news, or invitations relevant to the Indian community
+                        in Turkey (e.g., via email, WhatsApp, or SMS).</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Membership and Community Management:</strong> To maintain
+                        records of participants/members, process any voluntary contributions or registrations, and
+                        provide access to community benefits or exclusive events.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Event Planning and Safety:</strong> To organize smooth,
+                        tailored events (e.g., ensuring vegetarian options or accommodations) and handle
+                        logistics/emergencies.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Compliance and Improvement:</strong> To fulfill legal
+                        obligations under KVKK or other Turkish laws, and to improve our services based on aggregated
+                        (non-identifiable) feedback.</li>
+                </ul>
+                <p style="margin-bottom: 1.5rem;">We do not process your data for marketing unrelated third-party
+                    products or for automated decision-making/profiling.</p>
+
+                <h3 style="margin-bottom: 0.5rem; color: var(--accent);">Disclosure of Information</h3>
+                <p style="margin-bottom: 0.5rem;">We do not sell, trade, rent, or share your personal data with third
+                    parties for commercial purposes. Sharing occurs only in limited cases permitted under KVKK:</p>
+                <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                    <li style="margin-bottom: 0.5rem;"><strong>With Your Explicit Consent:</strong> When you
+                        specifically agree (e.g., sharing contact info for a group event carpool).</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Service Providers:</strong> With trusted processors
+                        (e.g., event venue partners, email service providers, or payment gateways for donations) who act
+                        on our behalf and are bound by confidentiality and KVKK obligations.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Legal Obligations:</strong> In response to lawful
+                        requests from Turkish authorities, courts, or regulatory bodies (e.g., Kişisel Verileri Koruma
+                        Kurumu - KVKK Authority), or to protect rights/safety.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Non-Profit Exemptions:</strong> As a non-profit
+                        organization focused on cultural/community activities, processing related to current/former
+                        members, affiliates, or regular contacts may qualify under KVKK exemptions (Article 6), provided
+                        it aligns with our purposes, stays internal, and is not disclosed externally.</li>
+                </ul>
+
+                <h3 style="margin-bottom: 0.5rem; color: var(--accent);">Security Measures</h3>
+                <p style="margin-bottom: 1.5rem;">We implement appropriate technical and organizational measures to
+                    protect your personal data against unauthorized access, loss, alteration, disclosure, or
+                    destruction, in line with KVKK requirements. This includes secure storage, access controls,
+                    encryption where feasible, and regular reviews. However, no method of transmission over the internet
+                    or electronic storage is 100% secure.</p>
+
+                <h3 style="margin-bottom: 0.5rem; color: var(--accent);">Your Rights Under KVKK</h3>
+                <p style="margin-bottom: 0.5rem;">As a data subject under KVKK, you have rights including:</p>
+                <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                    <li>Access to your personal data.</li>
+                    <li>Request correction of inaccurate/incomplete data.</li>
+                    <li>Request deletion or anonymization (erasure) when no longer necessary.</li>
+                    <li>Object to processing for legitimate interests.</li>
+                    <li>Withdraw consent (where processing is based on consent).</li>
+                    <li>Request restriction of processing or data portability (where applicable).</li>
+                </ul>
+                <p style="margin-bottom: 1.5rem;">To exercise these rights, contact us at
+                    <strong>[your-email@friendsofindia-turkey.org]</strong>. We will respond within 30 days (as per
+                    KVKK), free of charge unless the request incurs significant costs.
+                </p>
+
+                <h3 style="margin-bottom: 0.5rem; color: var(--accent);">Changes to this Privacy Policy</h3>
+                <p style="margin-bottom: 1.5rem;">We may update this policy to reflect changes in our practices,
+                    services, or legal requirements (e.g., KVKK amendments). The latest version will be posted on our
+                    website. Significant changes will be notified via email or our community channels.</p>
+
+                <h3 style="margin-bottom: 0.5rem; color: var(--accent);">Contact Us</h3>
+                <p style="margin-bottom: 0.5rem;">For questions, concerns, requests, or complaints about this Privacy
+                    Policy or our data handling, please contact us at:</p>
+                <p style="margin-bottom: 1.5rem;"><strong>Email:</strong> [info@friendsofindia-turkey.org]</p>
+
+                <p style="font-style: italic; font-size: 0.85rem;">This Privacy Policy was last updated on February 19,
+                    2026.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/foiatr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Friends of India Association Turkey. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
