@@ -423,6 +423,46 @@ textarea.form-control {
   /* Green glow */
 }
 
+/* Accordion Styles */
+details.accordion {
+  transition: all 0.3s ease;
+}
+
+.accordion-header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-header::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-header h2 {
+  flex: 1;
+  font-size: 1.8rem;
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+  transition: transform 0.3s ease;
+}
+
+details[open].accordion>.accordion-header>.accordion-icon {
+  transform: rotate(180deg);
+  color: var(--secondary);
+}
+
+.accordion-content {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed var(--glass-border);
+  animation: fadeIn 0.4s ease forwards;
+}
+
 /* Animations */
 @keyframes shine {
   to {
