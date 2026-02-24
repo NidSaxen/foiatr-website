@@ -14,7 +14,7 @@ const slideshowData = [
         title: "Classical Indian Architecture"
     },
     {
-        image: "https://images.unsplash.com/photo-1544253139-49ddccf632d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1713986719987-fb689460f1f8?q=80&w=2178&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         title: "Vibrant Cultural Patterns"
     },
     {
