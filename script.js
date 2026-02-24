@@ -132,4 +132,42 @@ document.addEventListener('DOMContentLoaded', () => {
       galleryContainer.appendChild(gItem);
     });
   }
+
+  // Dynamic Homepage Slideshow
+  const homeSlideshow = document.getElementById('homeSlideshow');
+  if (homeSlideshow && typeof slideshowData !== 'undefined' && slideshowData.length > 0) {
+    homeSlideshow.innerHTML = ''; // Clear container
+
+    let currentSlide = 0;
+    const slides = [];
+
+    // Create DOM elements for slides
+    slideshowData.forEach((item, index) => {
+      const slide = document.createElement('div');
+      slide.className = 'slideshow-slide';
+      if (index === 0) slide.classList.add('active'); // Show first slide immediately
+
+      slide.innerHTML = `
+        <img src="${item.image}" alt="${item.title}" />
+        <div class="slideshow-caption">${item.title}</div>
+      `;
+
+      homeSlideshow.appendChild(slide);
+      slides.push(slide);
+    });
+
+    // Handle slide transitions if there's more than 1 image
+    if (slides.length > 1) {
+      setInterval(() => {
+        // Remove active class from current slide
+        slides[currentSlide].classList.remove('active');
+
+        // Move to next slide, looping back to 0 if at the end
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        // Add active class to new slide
+        slides[currentSlide].classList.add('active');
+      }, 5000); // Change image every 5 seconds
+    }
+  }
 });
