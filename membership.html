@@ -80,35 +80,42 @@
             <!-- Registration Form -->
             <div class="card glass">
                 <h3 style="margin-bottom: 1.5rem;">Registration Form</h3>
-                <form
-                    onsubmit="event.preventDefault(); alert('Registration successful! Welcome to the community.'); window.location.href='index.html';">
+                <form action="https://formsubmit.co/nidhiesh13@gmail.com" method="POST">
+                    <!-- Disable Captcha for a smoother experience (optional) -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Redirect back to the new membership success page after submission -->
+                    <input type="hidden" name="_next"
+                        value="https://nidsaxen.github.io/foiatr-website/membership-success.html">
+                    <input type="hidden" name="_subject" value="New Membership Registration">
+
                     <div class="form-group">
                         <label>Full Name</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="name" class="form-control" required>
                     </div>
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                         <div class="form-group">
                             <label>Phone Number (Turkey)</label>
-                            <input type="tel" class="form-control" required placeholder="+90">
+                            <input type="tel" name="phone" class="form-control" required placeholder="+90">
                         </div>
                         <div class="form-group">
                             <label>Email Address</label>
-                            <input type="email" class="form-control" required>
+                            <input type="email" name="email" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>City of Residence</label>
-                        <select class="form-control" required>
-                            <option>Istanbul</option>
-                            <option>Ankara</option>
-                            <option>Izmir</option>
-                            <option>Antalya</option>
-                            <option>Other</option>
+                        <select name="city" class="form-control" required>
+                            <option value="Istanbul">Istanbul</option>
+                            <option value="Ankara">Ankara</option>
+                            <option value="Izmir">Izmir</option>
+                            <option value="Antalya">Antalya</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Occupation/Status</label>
-                        <input type="text" class="form-control" required placeholder="e.g. Student, IT Professional">
+                        <input type="text" name="occupation" class="form-control" required
+                            placeholder="e.g. Student, IT Professional">
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Register
                         Now</button>
