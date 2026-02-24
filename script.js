@@ -96,4 +96,40 @@ document.addEventListener('DOMContentLoaded', () => {
       announcementsContainer.appendChild(card);
     });
   }
+
+  // Dynamic Gallery Rendering
+  const galleryContainer = document.getElementById('galleryContainer');
+  if (galleryContainer && typeof galleryData !== 'undefined') {
+    galleryContainer.innerHTML = ''; // Clear fallback
+
+    galleryData.forEach((item, index) => {
+      const gItem = document.createElement('div');
+      gItem.className = 'gallery-item glass';
+
+      // Inline styles for staggered animation matching the existing cards
+      gItem.style.opacity = '0';
+      gItem.style.transform = 'translateY(20px)';
+      gItem.style.animation = `fadeUp 0.5s ease forwards ${index * 0.1 + 0.3}s`;
+
+      // Check if image is placeholder or real
+      let mediaContent = '';
+      if (item.image === '#' || item.image === '') {
+        mediaContent = `
+          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--text-muted)">
+              <i class="fa-solid fa-image"></i>
+          </div>`;
+      } else {
+        mediaContent = `<img src="${item.image}" alt="${item.title}" loading="lazy" />`;
+      }
+
+      gItem.innerHTML = `
+        ${mediaContent}
+        <div class="gallery-overlay">
+            <h4>${item.title}</h4>
+        </div>
+      `;
+
+      galleryContainer.appendChild(gItem);
+    });
+  }
 });
